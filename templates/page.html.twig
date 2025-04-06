@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html{{ html_attributes }}>
+<head>
+  <head-placeholder token="{{ placeholder_token }}">
+  <title>{{ head_title }}</title>
+  <css-placeholder token="{{ placeholder_token }}">
+  <js-placeholder token="{{ placeholder_token }}">
+</head>
+<body{{ attributes }}>
+  <div class="bg-blue-600 text-white p-4">
+    {{ page.top_banner }}
+  </div>
+
+  <header class="flex items-center justify-between p-4 bg-gray-100">
+    <div class="logo">
+      {{ page.logo }}
+    </div>
+    <nav class="navigation">
+      {{ page.navigation }}
+    </nav>
+  </header>
+
+  <main class="flex flex-col md:flex-row p-4 gap-4">
+    <aside class="w-full md:w-1/4 bg-gray-50 p-4">
+      {{ page.sidebar_first }}
+    </aside>
+    <section class="w-full md:w-3/4 p-4">
+      {{ page.content }}
+    </section>
+  </main>
+
+  <footer class="bg-gray-200 text-center p-4">
+    {{ page.footer }}
+  </footer>
+
+  <js-bottom-placeholder token="{{ placeholder_token }}">
+</body>
+</html>

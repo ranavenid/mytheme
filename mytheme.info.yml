@@ -1,0 +1,17 @@
+name: 'MyTheme'
+type: theme
+description: 'Custom Drupal 10 theme using Tailwind CSS'
+core_version_requirement: ^10
+base theme:olivero
+package: Custom
+
+libraries:
+  - mytheme/global-styling
+
+regions:
+  top_banner: 'Top Banner'
+  logo: 'Logo'
+  navigation: 'Navigation Menu'
+  sidebar_first: 'Left Sidebar'
+  content: 'Content'
+  footer: 'Footer'
